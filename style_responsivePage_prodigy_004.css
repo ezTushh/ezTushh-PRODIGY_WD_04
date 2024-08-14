@@ -1,0 +1,119 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+#navbar .logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#navbar ul li {
+    margin: 0 10px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    color: #ff6347; /* Change the color when hovering */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar ul {
+        display: none;
+    }
+
+    #navbar .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+    }
+
+    #navbar.active ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    #navbar ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+/* Content Sections */
+section {
+    height: 100vh;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#about {
+    background-color: #e4e4e4;
+}
+
+#services {
+    background-color: #d4d4d4;
+}
+
+#contact {
+    background-color: #c4c4c4;
+}
+
+/* Section Headers */
+section h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #333;
+}
+
+section p {
+    font-size: 18px;
+    color: #555;
+}
